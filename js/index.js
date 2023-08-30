@@ -16,19 +16,16 @@ const getApiProduct = async () => {
 
             let prod = arrProduct[i];
             htmt += ` 
-                      <div class="col-lg-3 col-md-6 col-sm-12" id="prod__item">
+                      <div class="col-lg-3 col-md-6 col-sm-12 " id="prod__item">
                         <div class="card">
                             <div class="card-header">
                                 <img src=${prod.image} class="w-100" />
                             </div>
-                            <div class="card-body justify-content-around align-items-center">
-                                <p class ="d-flex">
-                                  <i class="fa fa-star"></i> 
-                                  <p>(4.5)</p>
-                                </p>
-                                <h3>${prod.name}</h3>
+                            <div class="card-body bg-dark text-light">
+                                <p><i class="fa fa-star"> (4.5)</i></p>
+                                <h4>${prod.name}</h4>
                             </div>
-                            <div class="card-footer d-flex justify-content-around align-items-center">
+                            <div class="card-footer d-flex bg-dark text-light">
                                 <p>${prod.price}$</p>
                                 <button id="btnBuy">Add to cart</button>
                             </div>
@@ -50,14 +47,11 @@ const getApiProduct = async () => {
                                 <div class="card-header">
                                     <img src=${item.image} class="w-100" />
                                 </div>
-                                <div class="card-body justify-content-around align-items-center">
-                                    <p  class ="d-flex">
-                                        <i class="fa fa-star"></i> 
-                                        <p>(4.5)</p>
-                                    </p>
-                                    <h3>${item.name}</h3>
+                                <div class="card-body bg-dark text-light">
+                                <p><i class="fa fa-star"> (4.5)</i></p>
+                                    <h4>${item.name}</h4>
                                 </div>
-                                <div class="card-footer d-flex justify-content-around align-items-center">
+                                <div class="card-footer d-flex bg-dark text-light">
                                     <p>${item.price}$</p>
                                     <button id="btnBuy">Add to cart</button>
                                 </div>
